@@ -1,0 +1,47 @@
+#page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#contactinfo-div {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row--centered {
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.spacer {
+  height: 20px;
+}
+
+.nav-button.nav-button {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.nav-button--inactive.nav-button--inactive {
+  color: grey;
+}
+
+.nav-button--active.nav-button--active {
+  font-weight: 700;
+}
+
+.contact-card-icon {
+  margin-right: 0.4rem;
+  cursor: pointer;
+}
