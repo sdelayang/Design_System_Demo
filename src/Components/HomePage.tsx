@@ -2,6 +2,7 @@ import { Popout } from "../LibraryComponents/Popout";
 import { Typography } from "../LibraryComponents/Typography";
 import "./main.css";
 import { Post } from "./Post";
+import simple from "./assets/simple.png";
 
 export const HomePage = () => (
   <>
@@ -16,6 +17,14 @@ export const HomePage = () => (
         laboriosam non fu
       </Typography>
     </Popout>
-    <Post></Post>
+
+    <Post image={simple} size="large" />
+    <div className="row">
+      <Post image={simple} size="small" />
+      <Post image={simple} size="small" />
+      <Post image={simple} size="small" />
+    </div>
+
+    <Post image={simple} size="medium" />
   </>
 );

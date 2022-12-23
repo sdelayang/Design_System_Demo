@@ -45,3 +45,18 @@
   margin-right: 0.4rem;
   cursor: pointer;
 }
+
+.post {
+}
+
+.post--small {
+  max-width: 270px;
+}
+
+.post--medium {
+  max-width: 368px;
+}
+
+.post--large {
+  max-width: 564px;
+}
