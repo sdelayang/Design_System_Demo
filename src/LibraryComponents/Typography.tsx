@@ -1,7 +1,8 @@
 import React from "react";
 import { default as MuiTypo } from "@mui/material/Typography";
+import { CommonProps } from "./shared/CommonProps";
 
-interface TypographyProps {
+interface TypographyProps extends CommonProps {
   variant?:
     | "title1"
     | "title2"
@@ -9,15 +10,8 @@ interface TypographyProps {
     | "subtitle1"
     | "subtitle2"
     | "body1";
-  children: React.ReactNode;
 }
 
-export const Typography = ({
-  variant = "body1",
-  children,
-  ...rest
-}: TypographyProps) => (
-  <MuiTypo variant={variant} {...rest}>
-    {children}
-  </MuiTypo>
+export const Typography = ({ variant = "body1", ...rest }: TypographyProps) => (
+  <MuiTypo variant={variant} {...rest} />
 );

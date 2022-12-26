@@ -24,8 +24,23 @@
   flex-direction: column;
 }
 
+.column--padded {
+  margin: 0 16px;
+}
+
 .spacer {
   height: 20px;
+  width: 20px;
+}
+
+.spacer--small {
+  height: 10px;
+  width: 10px;
+}
+
+.spacer--large {
+  height: 36px;
+  width: 36px;
 }
 
 .nav-button.nav-button {
@@ -47,16 +62,68 @@
 }
 
 .post {
+  max-width: 368px;
+  margin-bottom: 36px;
 }
 
 .post--small {
   max-width: 270px;
 }
 
-.post--medium {
-  max-width: 368px;
-}
-
 .post--large {
   max-width: 564px;
+}
+
+.post-image {
+  width: 100%;
+}
+
+.chip {
+  margin: 16px 0;
+}
+
+.expander {
+  flex-grow: 1;
+}
+
+.popout-post {
+  max-width: 662px;
+  min-height: 392px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  padding-top: 278px;
+}
+
+.popout-post--image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.post-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+  .popout-post {
+    max-width: 662px;
+    min-height: 392px;
+    position: relative;
+    padding: 24px;
+    padding-right: 80px !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popout-post--image {
+    width: inherit;
+    position: absolute;
+    right: -490px;
+    top: -111px;
+  }
 }

@@ -4,10 +4,11 @@ import { useTheme } from "@mui/material/styles";
 interface PostProps {
   label: string;
   color: "blue" | "green" | "purple";
+  className?: string;
   style?: React.CSSProperties;
 }
 
-export const Chip = ({ label, color, style }: PostProps) => {
+export const Chip = ({ label, color, className, style }: PostProps) => {
   const theme = useTheme();
   let paletteChoice = theme.palette.primary;
   if (color === "green") {
@@ -16,7 +17,7 @@ export const Chip = ({ label, color, style }: PostProps) => {
     paletteChoice = theme.palette.blue;
   }
   return (
-    <div>
+    <div className={className}>
       <MuiChip
         style={{
           color: paletteChoice.dark,
